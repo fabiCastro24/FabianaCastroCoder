@@ -1,0 +1,488 @@
+/* enlace con el google fonts-- importar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*mis pruebas ccs*/
+/* RESETEO con selector universal, aplica estilos a cada uno de los elementos de los html se recomienda solo para reseteo  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+
+body {
+  background: lightcyan;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  padding: 5px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+
+}
+
+.back {
+  padding: 32px 0;
+  background-color: #d5e9f3;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  /*permite que el menu este delante de cualquier elemento*/
+}
+
+.logo {
+  font-size: 20px;
+  color: blue;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.menu.navbar ul li {
+  position: relative;
+  padding: 24px;
+  color: #ffff;
+  display: block;
+  font-size: 24px;
+
+}
+
+.menu.menu.navbar ul li a:hover {
+  color: #ea5247;
+}
+
+menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+
+}
+
+menu label {
+  cursor: pointer;
+  display: none;
+}
+
+/*Responsive*/
+@media (max-width:991px) {
+  .menu {
+    padding: 30 px;
+
+  }
+
+  .back {
+    padding: 40px 0;
+
+  }
+
+  .menu .menu.navbar ul li {
+    width: 100px;
+  }
+
+  #menu:checked~.menu.navbar {
+    display: initial;
+  }
+
+ /* .body {
+    font-size: 20px;
+    padding: 15px;
+  }*/
+}
+
+.titulosPrincipales {
+  font-size: 30px;
+  color: #e71515;
+  text-align: center;
+}
+
+.fondoFooter {
+  background-color: rgb(0, 247, 255);
+  text-align: center;
+  font-size: 24px;
+}
+
+.inline-element {
+  display: inline;
+  color: red;
+  font-weight: bold;
+}
+
+.parrafoPrincipal {
+  font-size: 16px;
+  color: black;
+  text-align: justify;
+  margin: 5px;
+  font-family: Regular 300;
+
+
+}
+
+
+.encabezadoMayuscula {
+  text-transform: uppercase;
+}
+
+/* cambio a mayusculas */
+
+
+
+.librosDestacados {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.h2subtitulos {
+  text-align: left;
+  font-size: 25px;
+  font-style: italic;
+  color: #050505c0;
+  text-align: center;
+}
+
+/* lo dejo sin especificidad porque lo reutilizo en diferentes elementos 
+.fondoTransparente {
+  background-color: rgba(234, 227, 218, 0.654);
+}*/
+/* aca indico que a la seccion con la clase listaOrdenada aplicar estilos, cuando no dejo espacio estoy indicando que no hay anidacion */
+section.listaOrdenada {
+  background-color: rgb(207, 206, 129);
+}
+
+
+
+/* ajusto tamaño de la imagen en el form del footer */
+footer form button img {
+  width: 20px;
+}
+
+footer .copy {
+  text-align: center;
+}
+/*
+
+
+
+
+
+/* estilos aplicados solo a encontranos */
+
+/* USO ETIQUETA SPAN  
+.direccion span {
+  font-weight: 700;
+  color: rgb(47, 24, 140);
+}*/
+
+/* estilos aplicados solo a nosotros */
+
+.tituloNosotros {
+  font-family: "Boston Traffic", sans-serif;
+  font-family: 25px;
+  color: rgb(21, 116, 218);
+}
+
+.textJustificado {
+  text-align: justify;
+}
+
+.podcast iframe {
+  width: 50%;
+}
+
+
+/*siempre que uso flex  debo activar contenedor principal */
+.librosDestacados {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 10px;
+
+}
+
+/*defino mi caja para usar en index*/
+.libros_card {
+  margin: 15px;
+  padding: 15px;
+  border: 2px solid black;
+  width: 100%;
+  height: 20%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*contenido de la caja*/
+  align-items: center;
+  z-index: -1;
+  background-color: white;
+
+}
+
+
+/*defino mi caja chicas para usar en index* idem .libros_card */
+
+.caja {
+  width: 50%;
+  height: 60vh;
+  border: 2px solid rgb(91, 60, 233);
+  margin: 10px;
+  padding: 15px;
+  flex-direction: column;
+  /* modidica el contenido de la caja*/
+  position: relative;
+  display: flex;
+  text-align: center;
+  background-color: hsla(208, 46%, 89%, 0.801);
+
+
+}
+
+.contenedorprueba {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+.cajaConocer {
+
+  width: fit-content;
+  /*height: 75vh;*/
+  border: 2px solid rgb(7, 6, 6);
+  margin: 10px;
+  padding: 10px;
+  flex-direction: column;
+  /* modidica el contenido de la caja*/
+  position: relative;
+  display: flex;
+  text-align: center;
+  background-color: hsla(76, 41%, 95%, 0.801);
+
+}
+
+.cajaGente {
+  width: fit-content;
+  height: 65vh;
+  border: 2px solid rgb(48, 245, 22);
+  margin: 10px;
+  padding: 15px;
+  flex-direction: column;
+  text-align: center;
+  display: flexbox;
+  background-color: rgba(77, 56, 56, 0.116);
+
+
+}
+
+.cajaContacto {
+  display: flex;
+  background: rgba (216, 203, 228);
+  width: 30%;
+  border: 2px solid black;
+  text-align: center;
+  flex-direction: row;
+  margin: 15px;
+  padding: 10px;
+}
+
+
+
+nav {
+  width: 70%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+/* banner con position sticky */
+main .banner {
+  background-color: #ea47a1;
+  background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%239f0b99' fill-opacity='0.28' fill-rule='evenodd'/%3E%3C/svg%3E");
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 70px;
+}
+
+/*TITULOS*/
+.h1Catalogo {
+  text-align: center;
+  padding: 15px;
+  margin: 30px;
+  border: 2px solid blueviolet;
+}
+
+
+
+
+
+
+.libros_card p {
+  flex-grow: 1;
+}
+
+.libros_card img {
+  width: 100%;
+}
+
+.libros_card .sale {
+  background-color: crimson;
+  padding: 3px;
+  color: whitesmoke;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: fit-content;
+  border-radius: 25%;
+  box-shadow: 2px 2px 2px black;
+}
+
+.libros_card .ver_mas {
+  text-decoration: none;
+  color: #b60ee8;
+  text-transform: uppercase;
+  font-weight: 600;
+  background-color: #2fb39c;
+  text-shadow: 3px 0px 3px #e3dee8;
+  padding: 10px;
+  border-radius: 20px 15px;
+}
+
+.ultimasUnidades .ultimasDetalle {
+  display: flex;
+  justify-content: center;
+}
+
+.ultimasDetalle div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ultimasParrafo p {
+  width: 50%;
+  margin: 50px auto 25px auto;
+}
+
+footer con flex y box model footer .footerBloque {
+  display: flex;
+  height: 51px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer h6 {
+  padding-bottom: 10px;
+}
+
+footer .redesSociales {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.redesSociales i {
+  font-size: 20px;
+}
+
+footer form {
+  width: 30%;
+}
+
+form input[type="email"] {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+form button {
+  border: none;
+  background-color: #d0cccc;
+}
+
+form img {
+  vertical-align: middle;
+}
+
+logo whatsapp con position fixed .whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+/*definicion del contenedor grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+
+}
+
+/* definir las caracteristicas de los items*/
+
+.grid-item {
+  background-color: #d6bcf7e3;
+  padding: 15px;
+  margin: 30px;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgb(83, 4, 90);
+
+}
+
+
+/*definicion del contenedor grid*/
+.grid-containerEventos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 200px );
+  justify-items: center;
+  gap: 10px;
+  margin: 10px;
+  
+  }
+
+  .grid-itemEventos {
+    background-color: white;
+    padding: 15px;
+    margin: 20px;
+    align-items: center;
+    border: 2px solid blue;
+    width: 400px;
+    height:fit-content;
+      
+  }
+  .imagenE{
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px black;
+  }
+  .h3titulo{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-style: italic;
+    color: orangered;
+  }
