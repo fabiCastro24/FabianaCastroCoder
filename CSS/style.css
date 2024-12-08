@@ -501,31 +501,4 @@ logo whatsapp con position fixed .whatsapp {
     color: orangered;
   }
 
-  /* en esta seccion agrego para prueba html*/
-  #gridLouyt{
-    background-color: #2fb39c;
-    display: grid;
-    grid-template-columns: repeat(6,1fr); 
-    grid-template-rows: 15 vh, 75vh, 10 vh;
-    grid-template-areas:           
-        
-              "logo menu  menu menu menu menu"
-              "imagen imagen2 imagen3 imagen4"
-              
-              "footer footer footer footer footer footer";
-    
-  }
-  .gridLogo{
-    grid-area: logo;
-    background-color: #b60ee8;
-  }
-  .gridMenu{
-    grid-area: menu;
-
-  }
- .gridImagen {
-  grid-area: imagen;
-  display: flex;
-  justify-content: flex-end;
-
- }
+  
