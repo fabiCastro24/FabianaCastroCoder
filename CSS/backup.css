@@ -19,7 +19,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 16px;
-  /*padding: 15px;*/
+  padding: 5px;
 }
 
 .container {
@@ -86,6 +86,39 @@ menu label {
   display: none;
 }
 
+/*Responsive*/
+@media (max-width:768px) {
+  .menu {
+    padding: 50 px;
+    
+
+  }
+
+  .back { /* agregue al resposive*/
+    padding: 50px 0;
+    
+
+  }
+
+  .menu .menu.navbar ul li {
+    width: 100px;
+    
+    
+  }
+
+  #menu:checked~.menu.navbar {
+    display: initial;
+  }
+
+ .body {
+    font-size: 20px;
+    padding: 15px;
+    grid-template-columns: 100%;
+    grid-template-rows: 2fr 60px 80vh 1 fr;
+    
+
+  }
+}
 
 .titulosPrincipales {
   font-size: 30px;
@@ -267,7 +300,6 @@ footer .copy {
   text-align: center;
   display: flexbox;
   background-color: rgba(77, 56, 56, 0.116);
-  
 
 
 }
@@ -469,49 +501,31 @@ logo whatsapp con position fixed .whatsapp {
     color: orangered;
   }
 
-  /*Responsive*/
-@media (max-width:600px) {
-  .menu {
-    padding: 15px;
-    
-
-  }
-
-  .back {  
-    padding: 30px 0;
-    
-
-  }
-
-  .menu .menu.navbar ul li {
-    width: 100px;
-    
+  /* en esta seccion agrego para prueba html*/
+  #gridLouyt{
+    background-color: #2fb39c;
+    display: grid;
+    grid-template-columns: repeat(6,1fr); 
+    grid-template-rows: 15 vh, 75vh, 10 vh;
+    grid-template-areas:           
+        
+              "logo menu  menu menu menu menu"
+              "imagen imagen2 imagen3 imagen4"
+              
+              "footer footer footer footer footer footer";
     
   }
-
-  #menu:checked~.menu.navbar {
-    display: initial;
+  .gridLogo{
+    grid-area: logo;
+    background-color: #b60ee8;
   }
-
- .body {
-    font-size: 16px;
-    padding: 10px;
-    grid-template-columns: 100%;
-    grid-template-rows: 2fr 60px 80vh ;
-    background-color: #d5e9f3;
-    
-   
+  .gridMenu{
+    grid-area: menu;
 
   }
+ .gridImagen {
+  grid-area: imagen;
+  display: flex;
+  justify-content: flex-end;
 
-  
-
-    
-    
-  
-}
-
-
- 
-
-
+ }
