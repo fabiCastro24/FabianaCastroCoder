@@ -22,23 +22,17 @@ body {
   padding: 5px;
 }
 
-/*.container {
-  max-width: 1100px;
+.container {
+  max-width: 100px;
   margin: 0 auto;
 
-}*/
+}
 
-.back { /* fondo del menu*/
-  padding: 40px 0;
+.back {
+  padding: 32px 0;
   background-color: #d5e9f3;
- 
 }
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
-  padding: 10px;
-}
+
 .menu {
   position: absolute;
   top: 0;
@@ -54,13 +48,20 @@ body {
 .logo {
   font-size: 20px;
   color: blue;
-  font-weight: 800;
+  font-weight: 200;
   text-transform: uppercase;
   text-align: left;
 }
-li {
-  Padding: 10px;
-  }
+
+
+/*agregue esto 13/12*/
+.headercontainer img.logo {
+
+  border-radius: 15px;
+  width: 15%;
+}
+
+
 
 
 
@@ -68,7 +69,7 @@ li {
 
 .menu.navbar ul li { /*modifique esto */
   position: relative;
-  padding: 30px;
+  padding: 24px;
   color: #ffff;
   display: flex;
   font-size: 24px;
@@ -96,30 +97,17 @@ menu label {
 }
 
 /*Responsive*/
-@media (max-width:780px) {
+@media (max-width:768px) {
   .menu {
-    padding: 30px;
-    font-size: 15px;
-    align-items:center;
-    justify-content:space-between;
-     
+    padding: 50 px;
     
-      }
+
+  }
 
   .back { /* agregue al resposive*/
     padding: 50px 0;
     
 
-  }
-
-  .menu.navbar ul li { /*modifique esto */
-    position: relative;
-    padding: 10px;
-    color: #ffff;
-    display: flex;
-    font-size: 15px;
-    flex-direction: column;
-    align-items: center;
   }
 
   .menu .menu.navbar ul li {
@@ -136,28 +124,10 @@ menu label {
     font-size: 20px;
     padding: 15px;
     grid-template-columns: 100%;
-    grid-template-rows: 3fr 60px 60vh 1 fr;
+    grid-template-rows: 2fr 60px 80vh 1 fr;
     
 
   }
-
-  .caja {
-    width: 30%;
-    height: 40vh;
-    border: 2px solid rgb(91, 60, 233);
-    margin: 5px;
-    padding: 10px;
-    flex-direction: column;
-    /* modidica el contenido de la caja*/
-    position:absolute;
-    display: flex;
-    text-align: center;
-    background-color: hsla(208, 46%, 89%, 0.801);
-  
-  
-  }
-  
-  
 }
 
 .titulosPrincipales {
