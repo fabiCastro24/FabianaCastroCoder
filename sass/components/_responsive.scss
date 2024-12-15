@@ -1,0 +1,45 @@
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    /* Cambiar a diseño vertical */
+    .menu {
+      display:flex; /* Oculta el menú inicialmente */
+      flex-direction: column; /* Cambia a columna */
+      position: none;
+      top: 60px;
+      right: 0;
+      background-color: #ebe6ee; /* Fondo del menú desplegable */
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .menu li {
+      margin: 10px 0; /* Espaciado vertical */
+      text-align: right; /* Centrar los elementos */
+     
+    }
+    .menuVisual { /* contenedor del menu*/
+       
+       display: flex;
+       align-items:right ;
+       justify-content: left;
+   }
+   /* .hamburger {
+      display: flex; /* Muestra el botón hamburguesa 
+    }*/
+  
+    /* Mostrar menú al activar */
+    .menu.show {
+      display: flex; /* Cambia de oculto a visible */
+    }
+
+    header {
+        background-color: none;
+
+    }
+    .logo {
+        width: 0%;
+        height: 10px;  }
+
+
+  }

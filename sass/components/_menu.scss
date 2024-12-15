@@ -1,0 +1,83 @@
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que los elementos se ajusten a la pantalla */
+    justify-content: space-between;
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    padding: 0 20px;
+}
+
+.logo {
+    width: 10%;
+    height: 120px;
+    
+    
+}
+
+img {
+    width: 80%;
+    height: 90%;
+   
+}
+
+.containerMenu {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    /*align-content: center;*/
+    align-items: center;
+    justify-content: center;
+    /*background: rgb(209, 210, 223);*/
+}
+
+
+.menuVisual { /* contenedor del menu*/
+     background-color: rgb(40, 219, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 10%;
+    margin-bottom: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.menuVisual li {
+    margin: 0 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    /*color: rgb(223, 218, 218);*/
+    cursor: pointer;
+
+}
+.menu a { /* sombreado al menu*/
+    text-decoration: none;
+    /* Sin subrayado en los enlaces */
+    color: #333;
+    /* Color del texto */
+    font-weight: bold;
+    padding: 5px 10px; /* Espaciado interno para cada enlace */
+    transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+.menu li {
+    margin-right: 30px; /* Espaciado entre los elementos del menú */
+  }
+
+.menu a:hover {
+    background-color: #555;
+    color: #ffcc00;
+    border-radius: 5%;
+}
+
+
