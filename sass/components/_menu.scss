@@ -33,7 +33,7 @@ img {
 
 
 .menuVisual { /* contenedor del menu*/
-     background-color: rgb(40, 219, 49);
+     /*background-color: rgb(40, 219, 49);*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -64,7 +64,7 @@ img {
 .menu a { /* sombreado al menu*/
     text-decoration: none;
     /* Sin subrayado en los enlaces */
-    color: #333;
+    color: #010203;
     /* Color del texto */
     font-weight: bold;
     padding: 5px 10px; /* Espaciado interno para cada enlace */
@@ -75,8 +75,8 @@ img {
   }
 
 .menu a:hover {
-    background-color: #555;
-    color: #ffcc00;
+    background-color:whitesmoke;
+    color: orangered;
     border-radius: 5%;
 }
 
