@@ -1,0 +1,346 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+.titulosPrincipales {
+  font-size: 30px;
+  color: #e71515;
+  text-align: center;
+}
+
+.h2subtitulos {
+  text-align: left;
+  font-size: 25px;
+  font-style: italic;
+  color: rgba(5, 5, 5, 0.7529411765);
+  text-align: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: lightcyan;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  /*padding: 5px;*/
+}
+
+/*definicion del contenedor grid*/
+.grid-containerEventos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  /* Responsivo para diferentes tamaños de pantalla */
+  gap: 20px;
+  margin: 10px;
+}
+
+.grid-itemEventos {
+  background-color: white;
+  padding: 15px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imagenE {
+  width: 100%;
+  /* La imagen ocupa todo el ancho disponible del contenedor */
+  height: 300px;
+  /* Ajusta la altura fija */
+  max-height: 300px;
+  /* Altura máxima para mantener el diseño */
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  object-fit: cover;
+  /* Ajusta la imagen sin distorsión, recortando si es necesario */
+}
+
+.imagenPrinc {
+  width: 95%;
+  /* La imagen ocupa todo el ancho disponible del contenedor */
+  height: 700px;
+  /* Ajusta la altura fija */
+  max-height: 800px;
+  /* Altura máxima para mantener el diseño */
+  border-radius: 5px;
+  box-shadow: 0 0 20px black;
+  object-fit: cover;
+  /* Ajusta la imagen sin distorsión, recortando si es necesario */
+}
+
+/*defino mi caja para usar en index*/
+.libros_card {
+  margin-left: 20%;
+  padding: 30px;
+  border: 2px solid black;
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*contenido de la caja*/
+  align-items: center;
+  background-color: white;
+  max-width: 900px;
+  /* Limita el ancho máximo */
+}
+
+.grid-itemEventosp {
+  background-color: white;
+  padding: 15px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.imagenEp {
+  width: 100%;
+  /* La imagen ocupa todo el ancho disponible del contenedor */
+  height: 300px;
+  /* Ajusta la altura fija */
+  max-height: 300px;
+  /* Altura máxima para mantener el diseño */
+  border-radius: 10px;
+  box-shadow: 0 0 20px black;
+  object-fit: cover;
+  /* Ajusta la imagen sin distorsión, recortando si es necesario */
+}
+
+.caja {
+  width: 80%;
+  max-width: 600px;
+  /* Limita el ancho máximo */
+  height: auto;
+  border: 2px solid #d8e93c;
+  /* Color del borde */
+  border-radius: 10px;
+  /* Bordes redondeados */
+  margin: 10px auto;
+  /* Centra horizontalmente con márgenes automáticos */
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* Centra el contenido verticalmente */
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  text-align: center;
+  background-color: hsla(76, 89%, 50%, 0.8);
+  /* Color de fondo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Sombra para destacar */
+}
+
+/*definicion del contenedor grid*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+}
+
+.grid-item {
+  background-color: rgba(214, 188, 247, 0.8901960784);
+  padding: 15px;
+  margin: 20px;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgb(83, 4, 90);
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 400px;
+}
+
+form input[type=email] {
+  width: 70%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+}
+
+form button {
+  border: none;
+  background-color: #d0cccc;
+}
+
+form img {
+  vertical-align: middle;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  bottom: 20px;
+  /* Separado del borde inferior */
+  right: 20px;
+  /* Separado del borde derecho */
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.imagenw {
+  width: 30%;
+  height: 10%;
+  border-radius: 3px;
+  box-shadow: 0 0 20px rgb(223, 19, 19);
+  object-fit: cover;
+}
+
+.fondoFooter {
+  background-color: rgb(0, 247, 255);
+  text-align: center;
+  font-size: 24px;
+}
+
+/* ajusto tamaño de la imagen en el form del footer */
+footer form button img {
+  width: 15px;
+}
+
+footer .copy {
+  text-align: center;
+}
+
+/* Estilos generales del header */
+header {
+  background-color: hsla(226, 59%, 68%, 0.884); /* Color de fondo */
+  padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten a la pantalla */
+  justify-content: space-between;
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  padding: 0 20px;
+}
+
+.logo {
+  width: 10%;
+  height: 120px;
+}
+
+img {
+  width: 80%;
+  height: 90%;
+}
+
+.containerMenu {
+  width: 90%;
+  height: 120px;
+  display: flex;
+  /*align-content: center;*/
+  align-items: center;
+  justify-content: center;
+  /*background: rgb(209, 210, 223);*/
+}
+
+.menuVisual { /* contenedor del menu*/
+  /*background-color: rgb(40, 219, 49);*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menuVisual li {
+  margin: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /*color: rgb(223, 218, 218);*/
+  cursor: pointer;
+}
+
+.menu a { /* sombreado al menu*/
+  text-decoration: none;
+  /* Sin subrayado en los enlaces */
+  color: #010203;
+  /* Color del texto */
+  font-weight: bold;
+  padding: 5px 10px; /* Espaciado interno para cada enlace */
+  transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+
+.menu li {
+  margin-right: 30px; /* Espaciado entre los elementos del menú */
+}
+
+.menu a:hover {
+  background-color: whitesmoke;
+  color: orangered;
+  border-radius: 5%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Cambiar a diseño vertical */
+  .menu {
+    display: flex; /* Oculta el menú inicialmente */
+    flex-direction: column; /* Cambia a columna */
+    position: none;
+    top: 60px;
+    right: 0;
+    background-color: #ebe6ee; /* Fondo del menú desplegable */
+    width: 100%;
+    padding: 10px 0;
+  }
+  .menu li {
+    margin: 10px 0; /* Espaciado vertical */
+    text-align: right; /* Centrar los elementos */
+  }
+  .menuVisual { /* contenedor del menu*/
+    display: flex;
+    align-items: right;
+    justify-content: left;
+  }
+  /* .hamburger {
+     display: flex; /* Muestra el botón hamburguesa 
+   }*/
+  /* Mostrar menú al activar */
+  .menu.show {
+    display: flex; /* Cambia de oculto a visible */
+  }
+  header {
+    background-color: none;
+  }
+  .logo {
+    width: 0%;
+    height: 10px;
+  }
+  .grid-containerEventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

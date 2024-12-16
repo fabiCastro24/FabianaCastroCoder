@@ -1,0 +1,169 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: lightcyan;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  /*padding: 5px;*/
+}
+
+.titulosPrincipales1 {
+  font-size: 30px;
+  color: #e71515;
+  text-align: center;
+}
+
+.titulosPrincipales {
+  font-size: 30px;
+  color: #e71515;
+  text-align: center;
+}
+
+.fondoFooter {
+  background-color: rgb(0, 247, 255);
+  text-align: center;
+  font-size: 24px;
+}
+
+/* ajusto tamaño de la imagen en el form del footer */
+footer form button img {
+  width: 15px;
+}
+
+footer .copy {
+  text-align: center;
+}
+
+/* Estilos generales del header */
+header {
+  background-color: #7dddad; /* Color de fondo */
+  padding: 10px 0; /* Espaciado superior e inferior */
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  /* Permite que los elementos se ajusten a la pantalla */
+  justify-content: space-between;
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  padding: 0 20px;
+}
+
+.logo {
+  width: 10%;
+  height: 120px;
+}
+
+img {
+  width: 80%;
+  height: 90%;
+}
+
+.containerMenu {
+  width: 90%;
+  height: 120px;
+  display: flex;
+  /*align-content: center;*/
+  align-items: center;
+  justify-content: center;
+  /*background: rgb(209, 210, 223);*/
+}
+
+.menuVisual { /* contenedor del menu*/
+  background-color: rgb(40, 219, 49);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menuVisual li {
+  margin: 0 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  /*color: rgb(223, 218, 218);*/
+  cursor: pointer;
+}
+
+.menu a { /* sombreado al menu*/
+  text-decoration: none;
+  /* Sin subrayado en los enlaces */
+  color: #333;
+  /* Color del texto */
+  font-weight: bold;
+  padding: 5px 10px; /* Espaciado interno para cada enlace */
+  transition: color 0.3s, background-color 0.3s; /* Transiciones suaves */
+}
+
+.menu li {
+  margin-right: 30px; /* Espaciado entre los elementos del menú */
+}
+
+.menu a:hover {
+  background-color: #555;
+  color: #ffcc00;
+  border-radius: 5%;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  /* Cambiar a diseño vertical */
+  .menu {
+    display: flex; /* Oculta el menú inicialmente */
+    flex-direction: column; /* Cambia a columna */
+    position: none;
+    top: 60px;
+    right: 0;
+    background-color: #ebe6ee; /* Fondo del menú desplegable */
+    width: 100%;
+    padding: 10px 0;
+  }
+  .menu li {
+    margin: 10px 0; /* Espaciado vertical */
+    text-align: right; /* Centrar los elementos */
+  }
+  .menuVisual { /* contenedor del menu*/
+    display: flex;
+    align-items: right;
+    justify-content: left;
+  }
+  /* .hamburger {
+     display: flex; /* Muestra el botón hamburguesa 
+   }*/
+  /* Mostrar menú al activar */
+  .menu.show {
+    display: flex; /* Cambia de oculto a visible */
+  }
+  header {
+    background-color: none;
+  }
+  .logo {
+    width: 0%;
+    height: 10px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
